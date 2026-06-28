@@ -1,0 +1,9 @@
+Docker learning order:
+
+1. Install Docker on Ubuntu (engine, not Desktop)
+2. Core concepts — images, containers, layers, registries
+3. Running containers, flags, lifecycle commands
+4. Writing your own Dockerfile
+5. docker-compose for multi-container setups
+6. Build something real — a small app containerized and runnable
+7. Then GitHub Actions to auto-build/push it

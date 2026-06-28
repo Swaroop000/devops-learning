@@ -1,0 +1,17 @@
+services:
+  
+  web:
+    build: .
+    ports:
+      - 5000:5000
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:15
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: ${USER_NAME}
+      POSTGRES_PASSWORD: ${USER_PASS}
+      POSTGRES_DB: ${DB_NAME}
